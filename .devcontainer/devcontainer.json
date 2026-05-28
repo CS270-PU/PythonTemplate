@@ -1,8 +1,10 @@
 {
-    "build": {
-        "dockerfile": "./Dockerfile",
-        "context": "."
-    },
+	
+    "image": "mcr.microsoft.com/devcontainers/python:3",
+   //  "build": {
+   //     "dockerfile": "./Dockerfile",
+   //     "context": "."
+   // },
     "features": {
         //"ghcr.io/devcontainers/features/desktop-lite:1": {},
         "ghcr.io/devcontainers/features/common-utils:2":{
@@ -45,6 +47,7 @@
     },
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	"postCreateCommand": "sudo apt-get install -y enscript ghostscript poppler-utils",
 
 	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
