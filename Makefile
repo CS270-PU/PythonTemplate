@@ -45,3 +45,7 @@ printAll:
 	rm -f source.pdf checks.pdf checks.txt
 
 	@echo "Created main.pdf"
+
+clean:
+	rm -f *.pdf checks.txt source.pdf checks.pdf
+	rm -rf .ruff_cache src/.ruff_cache __pycache__ src/__pycache__ .pytest_cache
