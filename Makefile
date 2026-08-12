@@ -1,4 +1,4 @@
-################################################################################
+###############################################################################
 # File name:    Makefile
 # Class:        CS 270
 # Purpose:      Python development and assignment PDF generation
@@ -7,7 +7,7 @@
 #   1. Python source code
 #   2. Ruff linting results
 #   3. Pyright type-checking results
-################################################################################
+###############################################################################
 
 ENSCRIPT_FLAGS=-C -T 4 -p - -M Letter -Epython --color -fCourier8
 OUT_DIR=output
