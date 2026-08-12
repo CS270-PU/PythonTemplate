@@ -10,6 +10,11 @@
 
 from datetime import date
 
-print('Hello world!')
+def Foo (sName :str):
+    print (f"Hello {sName}")
 
-print('Today is', date.today())
+print ("Hello World")
+
+print ('Today is', date.today())
+
+Foo(4)
