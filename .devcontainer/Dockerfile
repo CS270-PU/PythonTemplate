@@ -26,7 +26,8 @@ RUN python3 -m pip install --no-cache-dir --upgrade \
         jaraco.context==6.1.0 \
         wheel==0.46.2 \
         ruff \
-        pyright
+        pyright \
+        pytest
 
 # Optional: install project Python packages from requirements.txt.
 #
