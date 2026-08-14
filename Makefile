@@ -15,12 +15,8 @@ OUT_DIR=output
 all: check
 
 check:
-	ruff check src/ || true
+	ruff check src/
 	pyright src/
-
-fix:
-	ruff check --fix src/
-	ruff format src/
 
 printAll:
 	@mkdir -p $(OUT_DIR)
